@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo mkdir /var/run/motion
+sudo touch /var/run/motion/motion.pid
+sudo nice -n -10 motion

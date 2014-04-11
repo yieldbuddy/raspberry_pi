@@ -1,0 +1,44 @@
+	h2>a { font-family: arial, helvetica, geneva, sans-serif; color: black; font-weight: bold; text-decoration: none }
+	h2>a:hover	{ font-family: arial, helvetica, geneva, sans-serif; color: red; font-weight: bold; text-decoration: none  }
+	a.base				{ font-family: arial, helvetica, geneva, sans-serif; color: black; font-weight: bold; font-size: 12px; text-decoration: none }
+	a.base:hover	{ font-family: arial, helvetica, geneva, sans-serif; color: black; font-weight: bold; font-size: 12px; text-decoration: none }
+	a.titleHeader				{ font-family: arial, helvetica, geneva, sans-serif; color: black; font-weight: bold; font-size: 12px; text-decoration: none }
+	a.titleHeader:hover	{ font-family: arial, helvetica, geneva, sans-serif; color: red; font-weight: bold; font-size: 12px; text-decoration: none }
+	a.propItemTitle			{ font-family: arial, helvetica, geneva, sans-serif; color: black; font-size: 12px; font-weight: bold;  text-decoration: none }
+	a.propItemTitle:hover		{ font-family: arial, helvetica, geneva, sans-serif; color: red; font-size: 12px; font-weight: bold;  text-decoration: none }
+	a.propItem			{ font-family: arial, helvetica, geneva, sans-serif; color: black; font-size: 12px; text-decoration: none }
+	a.propItem:hover		{ font-family: arial, helvetica, geneva, sans-serif; color: red; font-size: 12px; text-decoration: underline }
+	a.Browse			{ font-family: arial, helvetica, geneva, sans-serif; color: black; font-size: 12px; text-decoration: none }
+	a.Browse:hover		{ font-family: arial, helvetica, geneva, sans-serif; color: red; font-size: 12px; text-decoration: none }
+	a.PrivUser			{ font-family: arial, helvetica, geneva, sans-serif; color: black; font-size: 12px; text-decoration: none }
+	a.PrivUser:hover		{ font-family: arial, helvetica, geneva, sans-serif; color: red; font-size: 12px; text-decoration: none }
+	a.PrivGroupe			{ font-family: arial, helvetica, geneva, sans-serif; color: black; font-size: 12px; text-decoration: none }
+	a.PrivGroupe:hover		{ font-family: arial, helvetica, geneva, sans-serif; color: red; font-size: 12px; text-decoration: none }
+	body 			{ font-family: arial, helvetica, geneva, sans-serif; background: #eee }	
+	.boxtitle		{font-family: arial, helvetica, geneva, sans-serif;font-size: 12px; padding: 5; padding-left: 20; padding-right: 15; background: lightgrey}
+	.proptitle		{font-family: arial, helvetica, geneva, sans-serif;font-size: 12px; padding: 5; padding-left: 20; padding-right: 15; background: lightgrey; border: solid 1px black}
+	.viewProptitle	{font-family: arial, helvetica, geneva, sans-serif;font-size: 12px; background: #D3DCE3}
+	.viewProp		{font-family: arial, helvetica, geneva, sans-serif;font-size: 12px; background: lightgray}
+	.tabproptitle	{font-family: arial, helvetica, geneva, sans-serif;font-size: 12px; background: #D3DCE3}
+	.tabprop			{font-family: arial, helvetica, geneva, sans-serif;font-size: 12px; padding-left: 5; padding-right: 5}
+	.showSQL			{font-family: arial, helvetica, geneva, sans-serif; font-size: 10px; decoration: none}
+	td.Browse			{border: 1px solid #FFF; font-family: arial, helvetica, geneva, sans-serif; font-size: 11px; margin: 5px}
+	td.PrivUser			{border: 1px solid #FFF; font-family: arial, helvetica, geneva, sans-serif; font-size: 11px; margin: 5px}
+	td.PrivGroupe			{border: 1px solid #FFF; font-family: arial, helvetica, geneva, sans-serif; font-size: 11px; margin: 5px}
+	.Index			{border: 1px solid #FFF; font-family: arial, helvetica, geneva, sans-serif; font-size: 10px}
+	.insert			{border: 1px solid #FFF; font-family: arial, helvetica, geneva, sans-serif; font-size: 11px}
+	thead				{font-family: arial, helvetica, geneva, sans-serif; background: #D3DCE3}
+	tfoot				{font-family: arial, helvetica, geneva, sans-serif; background: grey}
+	.navbarre		{font-family: arial, helvetica, geneva, sans-serif; background: #D3DCE3}
+	.sqlsyntaxe		{font-family: arial, helvetica, geneva, sans-serif; font-size: 10px; margin-left: 5px; margin-right: 5px}
+	.syntaxe_keyword	{font-weight: bold; color: #990099}
+	.syntaxe_function	{color: #FF0000}
+	.syntaxe_type		{color: #FF9900}
+	.syntaxe_variable	{color: #800000}
+	.syntaxe_digit		{color: teal}
+	.syntaxe_string		{color: #008000}
+	.syntaxe_punct		{font-weight: bold; color: fuchsia}
+	.small-input	{font-family: arial, helvetica, geneva, sans-serif; font-size: 10px}
+	input				{font-family: arial, helvetica, geneva, sans-serif; font-size: 11px}
+	select,textarea	{font-family: arial, helvetica, geneva, sans-serif; font-size: 11px}
+	.export			{font-family: arial, helvetica, geneva, sans-serif; font-size: 11px}

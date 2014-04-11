@@ -1,0 +1,44 @@
+	
+  a { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; color: #bd2418; font-weight: bold; text-decoration: none }
+	a:hover	{ font-family: Verdana,arial, helvetica, geneva, sans-serif; color: #bd2418; font-weight: bold; text-decoration: underline }
+	a.base		{ font-family: Verdana,arial, helvetica, geneva, sans-serif; color: #bd2418; font-weight: bold; font-size: 12px; text-decoration: none }
+	a.base:hover	{ font-family: Verdana,arial, helvetica, geneva, sans-serif; color: #bd2418; font-weight: bold; font-size: 12px; text-decoration: underline }
+	a.titleHeader			{ font-family: Verdana,arial, helvetica, geneva, sans-serif; color: #e7dfce; font-weight: bold; font-size: 15px; text-decoration: none }
+	a.titleHeader:hover	{ font-family: Verdana,arial, helvetica, geneva, sans-serif; color: #e7dfce; font-weight: bold; font-size: 15px; text-decoration: underline }
+	a.propItemTitle			{ font-family: Verdana,arial, helvetica, geneva, sans-serif; color: #bd2418; font-weight: bold; font-size: 15px; text-decoration: none }
+	a.propItemTitle:hover	{ font-family: Verdana,arial, helvetica, geneva, sans-serif; color: #bd2418; font-weight: bold; font-size: 15px; text-decoration: underline }
+	a.propItem			{ font-family: Verdana,arial, helvetica, geneva, sans-serif; color: #bd2418; font-weight: bold; font-size: 12px; text-decoration: none}
+	a.propItem:hover	{ font-family: Verdana,arial, helvetica, geneva, sans-serif; color: #bd2418; font-weight: bold; font-size: 12px; text-decoration: underline }
+	a.Browse			{ font-family: Verdana,arial, helvetica, geneva, sans-serif; color: red; font-size: 12px;font-weight: bold; text-decoration: none }
+	a.Browse:hover		{ font-family: Verdana,arial, helvetica, geneva, sans-serif; color: red; font-size: 12px;font-weight: bold; text-decoration: underline }
+	a.PrivUser			{ font-family: Verdana,arial, helvetica, geneva, sans-serif; color: red; font-size: 12px;font-weight: bold; text-decoration: none }
+	a.PrivUser:hover		{ font-family: Verdana,arial, helvetica, geneva, sans-serif; color: red; font-size: 12px;font-weight: bold; text-decoration: underline }
+	a.PrivGroupe			{ font-family: Verdana,arial, helvetica, geneva, sans-serif; color: red; font-size: 12px;font-weight: bold; text-decoration: none }
+	a.PrivGroupe:hover		{ font-family: Verdana,arial, helvetica, geneva, sans-serif; color: red; font-size: 12px;font-weight: bold; text-decoration: underline }
+	body 				{ font-family: verdana,arial, helvetica, geneva, sans-serif; background: #f7f3ef;font-weight: bold;font-size: 12px; }	
+	.boxtitle		{font-family: Verdana,arial, helvetica, geneva, sans-serif;font-size: 14px; font-weight: bold; padding: 5; padding-left: 20; padding-right: 15; background: #bd2418;color:#e7dfce;}
+	.proptitle		{font-family: Verdana,arial, helvetica, geneva, sans-serif;font-size: 14px; font-weight: bold; padding: 5; padding-left: 20; padding-right: 15; background: #bd2418;color:#e7dfce;border: 1px solid black}
+	.viewProptitle	{font-family: Verdana,arial, helvetica, geneva, sans-serif;font-size: 12px;font-weight: bold;}
+	.viewProp		{font-family: Verdana,arial, helvetica, geneva, sans-serif;font-size: 12px;font-weight: bold;  }
+	.tabproptitle	{font-family: Verdana,arial, helvetica, geneva, sans-serif;font-size: 13px;font-weight: bold ;background: #bd2418;color:#e7dfce;}
+	.tabprop			{font-family: Verdana,arial, helvetica, geneva, sans-serif;font-size: 13px;font-weight: bold;}
+	.showSQL			{font-family: Verdana,arial, helvetica, geneva, sans-serif; font-size: 12px; decoration: none;}
+	td.Browse			{border: 1px solid #f7f3ef; font-family: verdana,arial, helvetica, geneva, sans-serif; font-size: 12px;padding-left: 5px; margin: 5px;}
+	.Index			{border: 1px solid #f7f3ef; font-family: verdana,arial, helvetica, geneva, sans-serif; font-size: 12px;padding-left: 5px;padding-right: 5px;}
+	.insert			{border: 1px solid #f7f3ef; font-family: verdana,arial, helvetica, geneva, sans-serif; font-size: 12px;padding-left: 5px;}
+	thead				{font-family: Verdana,arial, helvetica, geneva, sans-serif; background: #bd2418;color:#e7dfce;font-weight: bold;font-size: 12px;}
+	tfoot				{font-family: Verdana,arial, helvetica, geneva, sans-serif; background: #bd2418;color:#e7dfce;font-weight: bold;font-size: 12px;border: 1px solid #bd2418;}
+	.navbarre		{font-family: Verdana,arial, helvetica, geneva, sans-serif; background: #bd2418;color:#e7dfce;font-weight: bold;font-size: 12px;}
+	.sqlsyntaxe		{font-family: Verdana,arial, helvetica, geneva, sans-serif; font-size: 12px; margin-left: 5px; margin-right: 5px}
+	.syntaxe_keyword	{font-weight: bold; color: #990099}
+	.syntaxe_function	{color: #FF0000}
+	.syntaxe_type		{color: #FF9900}
+	.syntaxe_variable	{color: #800000}
+	.syntaxe_digit		{color: red}
+	.syntaxe_string		{color: #008000}
+	.syntaxe_punct		{font-weight: bold; color: fuchsia}
+	.small-input	{font-family: Verdana,arial, helvetica, geneva, sans-serif; font-size: 11px}
+	select,textarea	{font-family: Verdana,arial, helvetica, geneva, sans-serif; font-size: 11px}
+	.export			{font-family: Verdana,arial, helvetica, geneva, sans-serif; font-size: 12px;font-weight: bold;}
+	legend{font-weight: bold;}
+

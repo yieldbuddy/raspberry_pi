@@ -1,0 +1,13 @@
+#!/bin/sh
+case "$1" in
+  start)
+	echo "Starting yieldbuddy daemon..."
+	cd /home/pi/scripts/
+	sudo ./ybdaemon.sh > /dev/null 2>&1 &
+	echo "Started."
+	;;
+  stop)
+	echo "Stopping yieldbuddy daemon..."
+	break
+	;;
+esac

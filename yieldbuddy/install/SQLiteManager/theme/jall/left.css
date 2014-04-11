@@ -1,0 +1,9 @@
+	a.base		{ color: #e7dfce; font-weight: bold; font-size: 16px; text-decoration: none }
+	a.base:hover	{ color: #e7dfce; font-weight: bold; font-size: 16px; text-decoration: none }
+	a.dbsel 		{ color: black; font-weight: bold; font-size: 14px; text-decoration: none }
+	a.dbsel:hover 		{ color: black; font-weight: bold; font-size: 14px; text-decoration: underline }
+	a.item		{ font-family: Verdana; color: #f7f3ef; font-size: 13px;font-weight: bold; text-decoration: none}
+	a.item:hover		{ font-family: Verdana; color: #f7f3ef; font-size: 13px;font-weight: bold; text-decoration: underline}
+	body 			{ font-family: Verdana; background-color: #bd2418;font-size: 16px;font-weight: bold; color:#e7dfce; }
+	.database 	{ font-family: Arial, Verdana; background-color:#e7dfce; text-indent: 5px }
+	.item		  	{ font-family: Arial, Verdana; font-size: 10px; text-align: left; text-indent: 1em; vertical-align: middle }

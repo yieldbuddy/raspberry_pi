@@ -1,0 +1,77 @@
+SQLiteManager installation guide
+--------------------------------
+
+1 - Unpack your download file into your 'Document Root' folder
+	tar zxf SQLiteManager-*.tar.gz
+	or
+	unzip SQLiteManager-*.zip
+	
+2 - On linux plateform you must set config database (SQLiteManager-*/include/config.db) writable.
+
+3 - Go to http://localhost/SQLiteManager-*/ with your internet browser
+
+Secure install (exemple with apache build from source)
+--------------
+1 - Unpack your download file into your 'DocumentRoot' folder (/usr/local/apache/htdocs/) 
+	we are in /usr/src/ directory
+	tar zxf SQLiteManager-*.tar.gz
+	mv SQLiteManager-*/ /usr/local/apache/htdocs/
+	cd /usr/local/apache/htdocs/
+
+2 - set right to apache's user
+	to know your apache user and group see in /usr/local/apache/conf/httpd.conf
+	chown -R apache:apache SQLiteManager-*/
+	chmod -R 600 SQLiteManager-*/
+	
+3 - move config database to another directory
+	-Create a new directory, for example:
+	mkdir /usr/local/apache/sqliteDb/
+	chown -R apache:apache /usr/local/apache/sqliteDb/
+	
+	-Move config database :
+	mv /usr/local/apache/htdocs/SQLiteManager-*/include/config.db /usr/local/apache/sqliteDb/
+	
+	-Set it writable:
+	chmod -R 700 /usr/local/apache/sqliteDb/
+	
+	-Now you must edit the define file with your favorite editor:
+	vi /usr/local/apache/htdocs/SQLiteManager-*/include/user_defined.inc.php
+		set
+			define("SQLiteDb", "/usr/local/apache/sqliteDb/config.db");
+			define("DEFAULT_DB_PATH", "/usr/local/apache/sqliteDb/config.db");
+	
+	- Remove useless files
+		rm INSTALL TODO CHANGES LICENCE test.sqlite
+		
+4 - Restricted access
+	First you can edit you httpd.conf and add
+	<Directory /usr/local/apache/htdocs/SQLiteManager-*/>
+        DirectoryIndex index.php
+        order deny,allow
+        deny from all
+        allow from 127.0.0.1 192.168.0.0/24
+	</Directory>
+	You can authorize only access to computer or/and network
+	
+	-By default authenticate is disable
+		To set it edit define file:
+		vi /usr/local/apache/htdocs/SQLiteManager-*/include/user_defined.inc.php
+		set
+			define("WITH_AUTH", true);
+		Now you can login with the default user:
+		login : admin	passwd : admin
+		login : data	passwd : data
+		login : guest	passwd : guest
+		
+		You can manage all user and groupes where you are logged with 'Admin' account
+		
+5 - Use SQLiteManager with SQLite database version 3
+	Your php must load at startup the extension : 'php_pdo' and 'php_pdo_sqlite' from PECL 
+	open the user configuration file : user_defined.inc.php
+	and set
+		define('SQLITE3', true);
+	Now all the database must be in version 3
+	The configuration database is in version 3 too
+		
+	
+		

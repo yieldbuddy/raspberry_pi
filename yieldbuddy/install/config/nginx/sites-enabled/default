@@ -1,0 +1,14 @@
+server {
+        listen 80 default;
+ 
+        root   /var/www;
+        index index.php;
+ 
+        location ~ \.php$ {
+		root /var/www;
+                fastcgi_index index.php;
+		include fastcgi_params;
+		fastcgi_param SCRIPTFILENAME $document_root$fastcgi_script_name;
+		fastcgi_pass 127.0.0.1:9000;
+        }
+}

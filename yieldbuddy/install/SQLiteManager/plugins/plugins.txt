@@ -1,0 +1,7 @@
+To create a plugin :
+
+1. Create a directory.
+
+2. Create a file plugin.php in this directory
+
+3. Define range of plugin to show command in menus :

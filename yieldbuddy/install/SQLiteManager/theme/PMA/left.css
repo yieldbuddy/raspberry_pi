@@ -1,0 +1,9 @@
+	a.base		{ color: black; font-weight: bold; font-size: 12px; text-decoration: none }
+	a.base:hover	{ color: black; font-weight: bold; font-size: 12px; text-decoration: none }
+	a.dbsel 		{ color: black; font-weight: bold; font-size: 12px; text-decoration: none }
+	a.dbsel:hover 		{ color: red; font-weight: bold; font-size: 12px; text-decoration: none }
+	a.item		{ font-family: Arial, Verdana; color: black; font-size: 12px; text-decoration: none}
+	a.item:hover		{ font-family: Arial, Verdana; color: red; font-size: 12px; text-decoration: underline}
+	body 			{ font-family: Arial, Verdana; background-color: #D0DCE0 }
+	.database 	{ font-family: Arial, Verdana; text-indent: 5px }
+	.item		  	{ font-family: Arial, Verdana; font-size: 10px; text-align: left; text-indent: 1em; vertical-align: middle }

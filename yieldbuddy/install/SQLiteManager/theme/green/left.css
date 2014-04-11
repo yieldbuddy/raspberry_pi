@@ -1,0 +1,113 @@
+* { 
+  font-family: Verdana, Arial, Tahoma, sans-serif; 
+  font-size: 12px;
+  color: black;
+}
+html {
+  margin: 0;
+}
+body {
+  padding: 0;  margin: 0;
+  background-color: #7FC08F;
+	scrollbar-DarkShadow-Color: #326632;
+	scrollbar-3dLight-Color		: #FAFFFA;
+	scrollbar-Arrow-Color			: #326632;
+	scrollbar-Base-Color			: #DDEEDD;
+	scrollbar-Face-Color			: #7FC08F;
+	scrollbar-Highlight-Color	: #7FC08F;
+	scrollbar-Shadow-Color		: #7FC08F;
+	scrollbar-Track-Color			: #DDEEDD;
+  overflow: auto;
+  overflow-x: hidden;	 
+}
+td.objects {
+	background-color: #FAFFFA;
+  background-image: url(pics/bg_left.png); 
+  background-repeat: repeat-y;
+}
+div.logo {
+  border:0;
+  border-bottom: 1px solid gray;
+  text-align: left;
+  padding-left: 5px;
+  padding-top: 7px;
+ 	filter:progid:DXImageTransform.Microsoft.Shadow(color=#7F8F7F, Direction=180, Strength=2); 
+ 	height:36px;
+  margin-bottom:5px;
+}
+div.logo img {
+  margin-bottom:3px;
+}
+div.design { 
+position:absolute; width: 160px; top:22px; z-index:200; text-align:right; color:Silver; font-size:7px; 
+}
+div.base {
+position:absolute; width: 158px; top:-2px; z-index:150; text-align:right; color:Silver;
+}
+table.main {
+ 	filter:progid:DXImageTransform.Microsoft.Shadow(color=#7F8F7F, Direction=180, Strength=3); 
+}
+/* MSIE padding */
+tr.database 	{ 
+  padding: 1px;
+  background-color: #7FC08F; 
+  background-image: url(pics/bg_title.png); background-repeat: repeat-x;
+}
+/* Firefox padding */
+tr.database>td 	{ 
+  padding: 1px;
+}
+img {
+  vertical-align:top;
+}
+td.item, td.trigger, td.view, td.function {
+  text-indent: 0px;
+  vertical-align:middle;
+}
+a.base { 
+  color: Navy; 
+  font-weight: bold; 
+  text-decoration: none;
+}
+a.base:hover {
+  color: Blue; 
+  text-decoration: none;
+}
+a.dbsel {
+  color: black; 
+  font-weight: bold; 
+  font-size: 12px; 
+  text-decoration: none;
+}
+a.dbsel:hover {
+  color: black;
+  text-decoration: underline;
+}
+a.item { 
+  color: Navy; 
+  font-size: 12px;
+  text-decoration: none;
+  text-indent: 2px;
+  padding:0;
+  vertical-align:bottom;
+}
+a.item>img {
+  margin-left: 2px;
+}
+a.item:hover { 
+  color: blue;
+  background-color: white;
+}
+td.img_db {
+  border-bottom: 1px solid #505550; 
+}
+td.name_db {
+  border-bottom: 1px solid #505550; border-right: 1px solid #446644;   
+}
+td.objects {
+  border: 1px solid #BFEFDF; border-bottom: 1px solid #505550; 
+  border-right: 1px solid #446644; 
+  border-top : 0;
+  text-align: left;
+  padding : 3px 0px 3px 0px;
+}

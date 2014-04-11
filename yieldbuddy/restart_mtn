@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "Stopping Motion."
+sudo kill -9 $(top -b -n 1 | grep 'motion' | nawk -F ' ' '{print $1}') >/dev/null 2>&1
+sleep 2
+echo "Starting Motion."
+sudo /var/www/yieldbuddy/start_motion >/dev/null 2>&1

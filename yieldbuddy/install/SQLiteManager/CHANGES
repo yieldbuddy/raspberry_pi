@@ -1,0 +1,746 @@
+CHANGES
+
+------- Release 1.2.4 ---------
+02-03-2010 frederic HENNINOT <fhenninot@freesurf.fr>
+    - Fix eregi deprecated
+27-02-2010 Fabrice <admin@clearbudget.net>
+    - Fix PHP 5.3 issues
+
+------- Release 1.2.3 ---------
+05-01-2010 frederic HENNINOT <fhenninot@freesurf.fr>
+    - Some fix
+
+------- Release 1.2.2 ---------
+03-01-2010 frederic HENNINOT <fhenninot@freesurf.fr>
+    - Fix stripslashes bugs [1558386]
+    - Fix htmlentities bugs [1485598]
+    - Fix Quotes bugs
+    - Fix path bug for window [1801800]
+    - Fix Display of table with many rows (memory) [2843172]
+    
+------- Release 1.2.1 ---------
+01-01-2010 Tanguy Pruvot <tanguy.pruvot@gmail.com>
+	- PHP 5.3 support
+
+17-04-2006 frederic HENNINOT <fhenninot@freesurf.fr>
+	- fix bug if no driver PDO_SQLITE is available	
+	- Enhancement of error reporting for dynamic extension loading
+	- displaying query for query export
+
+16-04-2006 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix 'default value' disapear when modify table properties
+	- stay in place after remove element
+	- Fix some export problem [1407506]
+	- Fix insert data with HTML entities [1407516]
+	- Return to database properties when delete item
+	- Create new database for only sqlite version available
+	- Fix alway connect to :memory:
+	
+14-04-2006 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Update brazillian language pack 
+	- Fix bug when'jscalendar' or 'spawEditor' is not installed
+	- Fix index losing when modify table properties
+	- Enhancement of error management
+	- Fix 'default value' disapear when modify table properties
+	- stay in place after remove element
+			
+10-04-2006 frederic HENNINOT <fhenninot@freesurf.fr>
+	- starting of w3c compliance
+	- Fix authentication bugs
+
+03-01-2006 frederic HENNINOT <fhenninot@freesurf.fr>
+	- best query exec for PDO
+
+02-01-2006 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix bug where database can't be attain
+	- Fix bug when import an SQLiteManager export with Trigger
+
+26-12-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix crach with complex view creation
+
+24-12-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix disapear table when add new table
+	- Fix different method for closing database
+
+13-12-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix problem to add SQLite3 database
+	- Fix error when close database
+	- Fix error display where no error
+	- Fix drop table
+
+10-12-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix count problem from complex manual query
+	- Fix 'drop table' when only delete a field
+	- Fix bad close database
+
+10-12-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Enhancement of frame management
+
+------- Release 1.2.0RC1 ---------
+04-12-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Now SQLiteManager can manage simultaneously SQLite2 and SQLite3 database
+	- and the database version is autodetect
+
+13-11-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix bugs where no table was implicated in query
+------- Release 1.1.3 ---------
+13-11-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- If not defined DEFAULT_DB_PATH must be at root, not at include
+
+12-11-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix lost field properties when tables properties was modified
+
+11-11-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Auto detect SQlite Database version and display icon with version number
+	- Fix bug with PDO version 1.0RC, All constant becomes class constantes
+	- Fix charset for 'htmlentities'
+
+07-11-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- add netware platform support
+	- Fix Bug [1349537] : Stange notice error
+	- Add chinese traditional and chinese simplified language pack submitted by Xing Wu <cyber4cn@gmail.com>
+	
+05-11-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix Bug [1349141] : Syntax error in SQLiteExport
+	- Fix Bug [1342583] : Notice error in sql.class.php
+
+------- Release 1.1.2 ---------
+23-10-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix table properties display where no primary key is set
+	- Fix bug when add database and enhancement!
+
+21-10-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Enhancement of DEFAULT_DB_PATH, now new database without dirname will be save into DEFAULT_DB_PATH
+	- Small enhancement of authenticate
+
+16-10-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix bug [1318144] : escape name and path of database name 
+	- Add display of number changes lines with simple query
+
+04-10-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- add rowCount()
+	- recode '_checkBeginQuery' in sql.class.php
+	- Fix confirm display
+	- Enhancement of User Defined function management
+	- Update german language pack
+	- Update 'green' theme translation
+	- Enhancement where 'rowCount' don't get the good result
+
+25-09-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix Error in config3.db (sqliteIf)
+	- Fix row count with SQLITE3
+	- Update no translated message
+	
+23-09-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Re-activate User Define Function for SQLITE3 with PDO
+	- Fix notice with COOKIE
+	
+21-09-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix 'rowCount' with PDO release an PHP5.1
+
+20-09-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Update SQLite2 database
+	- Fix bug for delete index in french language
+	- Fix NULL update
+
+18-09-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix bug where change 'NULL' column to 'NOT NULL' column
+	- Add an UDF 'IF', you can send to me your utils UDF
+
+17-09-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix date format for jscalendar
+
+14-09-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- integration of 'jscalendar-1.0' to esy date entrie
+
+13-09-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Update 'sqlite_fulltextsearch' and fix deprecated use on it
+	- fix bug [1289082] : argument passed by value is deprecated
+	- fix bug [1254882] : wrong DEFAULT_DB_PATH
+	- fix bug warning where $_SERVER["HTTP_ACCEPT_LANGUAGE"]
+	- Fix possibility to remove readonly database
+	- Fix comment on administrator login
+	
+19-07-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix bug with SPAW Editor
+
+10-07-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix bug when export only data
+
+------- Release 1.1.1 ---------
+04-07-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix export database bug
+	- modify configuration filename in all language file
+
+03-07-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Integration a 'FullTextSearch' UDF build by Setec Astronomy <setec at freemail dot it>
+		You can see this class : http://www.phpclasses.org/browse/package/2328.html
+		To use it : fulltextsearch(columnName, 'searchString', caseSensitive);
+
+01-07-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Now work when 'short_open_tag' is set to off
+
+30-06-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix export NULL field
+
+24-06-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix null checkbox with advanced editor
+
+24-06-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix bug for removing SQLite3 database with PDO
+	- Update japanese language pack
+	- Add support of multibyte for language translation
+	- Fix bug [1226000] : ( cannot change DEFAULT_DB_PATH via include/user_defined.inc.php)
+	- Integration of SPAW advanced editor
+
+12-06-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix problem with PHP-5.1B1 - PDOStatement::fetchSingle() removed
+	- Update 'Spanish' language pack
+	- fix 'nowrap' in main
+	- Add 'Insert data from file' feature with SQLite3 (this feature has been removed)
+	- Enhancement of error manaement with PDO
+	- Enhancement of design into form edit
+
+------- Release 1.1.0 ---------
+06-06-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- update 'INSTALL' file and 'TODO' file
+
+05-06-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- change sqlitemanager home page into export data
+	- Fix notice on export when 'DROP VIEW'
+	- Change name of SQLITE3 option
+	- All general settings can be modify in a file : 'user_defined.inc.php'
+
+02-06-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix bug on database attachment with PDO
+
+01-06-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix bug when varchar fields contain '"'
+	- Fix Trigger problem with PDO
+	- Adding an SQLite3 demonstration database
+	- Fix bug when drop table with PDO
+	- remove insert from file, this commande not exist into SQLite3
+	- Fix bug when change table properties with PDO	
+
+31-05-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix view problem with PDO
+	- Fix Trigger problem with PDO
+	- remove 'User Defined Function' management for SQLite3 with PDO (PDO don't support UDF)
+	- Fix export problem with PDO
+	- Fix quotes problem into french text
+	- Enhancement Transaction who lock database
+
+30-05-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix count changes row with PDO
+	- Fix ROWID retreive with PDO
+	- Fix PRAGMA SQLite3 Options
+	- Fix UPDATE/INSERT with PDO
+	- Fix DROP table with PDO
+	- Fix Remove Database with PDO
+
+25-05-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Enhancement of PDO use to manage SQLite3 database
+
+------- Release 1.0.6 ---------
+23-04-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- fix bug: index disappear when modify table schema
+	- Fix warning when modifying table schema
+
+22-04-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Update italian language pack
+	- Fix bug for MAC OSx
+	- fix bug and enhancement of exporting/importing data
+	- fix bug when insert datetime field data
+
+31-03-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- delete field value when null checkbox is checked
+
+28-03-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- fix bug on session start
+	- Add 'save as new row' feature
+
+13-03-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- fix bug when create new trigger
+
+08-03-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- fix bug when modify a record with query contain quote
+
+------- Release 1.0.5 ---------
+01-03-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Add option to table copy
+
+28-02-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix bug on saving function
+
+27-02-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Finish Operation on Table module
+
+24-02-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix notice error when multiple insert
+
+23-02-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix error on export selected query
+
+22-02-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- fix warning error when view record
+	- fix update problem on null field value
+
+19-02-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Add Danish language pack
+	- Update all language pack
+
+22-01-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- The database list has been order in the left panel
+	
+22-01-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix bug when modify record and select no contain all field
+
+19-01-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Add refresh link into query box
+
+18-01-2005 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Add full/partial text display
+	- Add HTML/plain text display
+
+27-12-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Several notice fixes into SQLiteTableProperties
+	- Fix bug when added a not null field into a no empty table
+	- Added constant to allow plugin's execution
+	- add function to auto detect the version of an SQLite database file
+	- enhancement of PDO management
+
+21-12-2004 Tanguy PRUVOT <tanguy.pruvot@laposte.net>
+  	- Fix delete database (common.lib.php)
+  	- Dump Export CRLF (Windows) Option
+
+08-12-2004 Tanguy PRUVOT <tanguy.pruvot@laposte.net>
+  	- Added session directory write test (index.php)
+
+04-12-2004 Tanguy PRUVOT <tanguy.pruvot@laposte.net>
+	- Added Shutdown function to close db every times
+	- Several notice fixes
+	- Prepare Support for PDO SQLite 3.x (sqlite functions wrapper)
+
+29-11-2004 Tanguy PRUVOT <tanguy.pruvot@laposte.net>
+	- Limit string column data to max col-length
+	- Updated Green Theme
+	- Added Tip for php functions in Query page
+	- Removed quotes when writing non text values
+	- Fix problem in Db Options, linking base nothing
+	- Fix Theme availability if no translation
+	- Sample plugin MySQL Import (for direct data import)
+
+26-11-2004 Tanguy PRUVOT <tanguy.pruvot@laposte.net>
+	- Added customized JSCookMenu (support sub-menus / taskbar description)
+	- Added optional plugin's submenu for futur use
+	- Added new languages strings (fr/en)
+
+25-11-2004 Tanguy PRUVOT <tanguy.pruvot@laposte.net>
+	- Added Select Class on Views
+	- PHP code strings and HTML code clean
+	- HtmlEntities on languages strings
+	- Added missing end body/html on some files
+
+24-11-2004 Tanguy PRUVOT <tanguy.pruvot@laposte.net>
+	- added quotes() function for SQL queries (common.lib)
+	- PHP code strings and HTML code clean (common.lib, defined.inc ...)
+
+------- Release 1.0.4 ---------
+21-11-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- fix string finishing by '\' into query from MySQL
+	- Add '>' operator into 'SELECT' Module
+	- Add free conditional field into 'SELECT' module
+	- Remove default value into 'SELECT' module
+	- Add translation of 'SELECT' module
+	
+20-11-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- fix ';\r\n' import from MySQL
+
+19-11-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix delete/update record problem after sort
+	- cleaning code of SQLiteTableProperties->recupElement();
+
+18-11-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix '\r\n' into import SQL from MySQL
+
+15-11-2004 Tanguy PRUVOT <tanguy.pruvot@laposte.net>
+	- fix brackets in the 'SELECT' module
+
+12-11-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Integration of the 'SELECT' module design by Mauricio  Maia
+
+11-11-2004 Tanguy PRUVOT <tanguy.pruvot@laposte.net>
+	- Added brackets function (common.lib)
+	- Added brackets in queries (in most of scripts)
+	- Show query when syntax error if multiple query (sql.class)
+	- Fix index name to remove unsupported brackets [my table]_[index] -> my_table_index (ParsingQuery.class)
+	- Fix DB Options click, was always refreshing left pane (main.php / SQLiteDbOption.class)
+	- Refresh left pane after DB SQL query (main.php)
+	- Fix transaction rollup in Multiple queries from SQL Form
+	- PHP code strings and HTML code clean (sql.class, ParsingQuery.class, TableIndex.class)
+    
+10-11-2004 Tanguy PRUVOT <tanguy.pruvot@laposte.net>
+	- Fix bug when convert type 'Enum' from Mysql to SQLite
+	- Fix bug when convert create table with index from Mysql to SQLite and when an error occured into create table statement
+
+09-11-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix bug when import SQL file with break line
+	- Fix bug for import data from file
+
+08-11-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- fix translating problem
+	- Update japanese and bresilian language pack
+
+------- Release 1.0.3 ---------
+22-10-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix bug when create user defined function	
+
+21-10-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- When a field content HTML, displayinf of HTML code not HTML display
+
+11-10-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Bug Fix on displaying complex query
+
+09-10-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- display htmlentities into colorized query 
+
+05-10-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Add 'default_temp_store' database options
+	- Fix bug with PHP5 and var passed by reference
+	- Enhancement of error reporting for View building
+
+04-10-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Add 'title' propertie into img tag for displaying alternate message on mouseover
+
+------- Release 1.0.1 ---------
+20-09-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix problem with language management
+	- Update item was'nt translated
+
+18-09-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Update italian language pack
+	
+17-09-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix bug when remove database then remove attached database
+	- Allow to remove read only databases
+	- Fix bug for 'Options' manipulation where read only or not authorized
+	- Allow 'Options' items translatable
+
+16-09-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix bug : warning error with localtheme when error_reporting=E_ALL
+	- Fix bug : Display delete pics into attached database management
+
+------- Release 1.0.0 ---------
+13-09-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- adding 'INSTALL' file (english instruction)
+	- Implementation of change password
+	- Finishing of Authenticate management
+	- Fix bug on return page when delete, insert or update record
+
+12-09-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Enhancement Authenticate management
+
+09-09-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Enhancement login/logout feature
+	
+07-09-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- enhancement displaying with pics
+	- management of pics in themes
+	- Fix bug on Index management (insert or delete)
+	
+05-09-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Remove config param Read only and manage on config database or 
+work database is read only. This is to SQLiteManager work on CD with 
+ZAMPcd project of Xavier Garreau
+
+04-09-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Add config to set SQLiteManager Read Only (to work on CD with ZAMPcd)
+	
+------- Release 0.9.10 ---------
+29-08-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- New logo by Xavier Garreau
+	- New Favicon
+
+29-08-2004 jose antonio lopez lorenzo <ja_lopezl@yahoo.es>
+	- Add new theme 'JALL'
+
+29-08-2004 WiZ <soywiz@gmail.com>
+	- Add new language pack 'Spanish'
+
+------- Release 0.9.9 ---------
+25-08-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Enhancement of list index displaying
+	- Enhancement of display some table header
+
+24-08-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- enhancement of insert column name, now insert at cursor position or replace selection.
+	- add 'nowrap' into display query box
+	- Add the displaying of the current PHP version
+	- Add possibility to choose the direction after updating or inserting a new row
+
+23-08-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- fix bug when update record with an empty field or update without changing
+
+22-08-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix bug when CR/LF in SQL command
+
+21-08-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- change frame setup for use on all parent frame
+
+17-08-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix sorting language list
+
+17-08-2004 Cybertinus <cybertinus@cybertinus.nl>	
+	- Add language pack : dutch (Netherlands)
+
+16-08-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+        - Fix bug in Trigger parsing
+
+------- Release 0.9.8-2 ---------
+15-08-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix bug with PHP5 and E_STRICT too
+
+------- Release 0.9.8-1 ---------
+13-08-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix bug with PHP5 and E_STRICT
+	
+------- Release 0.9.8 ---------	
+09-08-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Update of all langage pack
+
+06-08-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Fix bug when 'EXPLAIN' and a list of column name or table.* in column list
+	- Fix warning error when display result of an attached database
+	- Fix bug when ';' at the end of query
+
+05-08-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Insert column field into textarea SQL form
+	- Fix bug with MD5 function
+	- Fix bug when empty a table
+	- Fix bug : display 'NULL' value only where column properties have 'notnull' not set
+	- Fix bug [1003924] some warning error when error_reporting is E_ALL
+
+04-08-2004 Maur�cio M. Maia <mauricio.maia@gmail.com>
+	- Add Brezilian portuguese Language
+
+03-08-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Best error reporting on sqlite error
+	
+02-08-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- New feature : Management of Attached databases
+
+29-07-2004 T. Kuzmic <translation@tkuzmic.com>
+	-Add Croatian Language
+	
+28-07-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Bugfix when add language pack
+	- fix problem for some button item not translatable	
+	
+------- Release 0.9.7-1 ---------
+28-07-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Bugfix : import problem with comment
+	- set error_reporting at E_ALL(PHP4) or E_STRICT(PHP5) in debug mode
+	- fix error display when debug is On
+	
+------- Release 0.9.7 ---------
+27-07-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Bugfix : with sqlite 2.8.14, sqlite_excape_string bug when data is empty, corrected
+	- Bugfix : Insert/modify record with char function
+	- Bugfix : display problem with mozilla on table header in browse mode
+
+26-07-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- BugFix : Trigger when STEP have "''"
+	- Bugfix some display problem on Trigger
+	- Add new feature, conditional export
+	- Add 'Explain' link in display query
+
+19-07-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Add ability to upload sqlite database file
+	- Add some column type and sorting type list (for compatibility with Kexi db)
+	- Add SQL virtual command : 'CREATE DATABASE dbname [AS dbFilename];
+
+------- Release 0.9.6 ---------
+02-05-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Bug Fix. : pb display error when 'error_reporting = E_ALL'
+	
+29-04-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Bug [943516] Fix. sqlite detection problem whith new version of PHP5 (RC2) on all platform
+	
+28-04-2004 Tomasz "Zyx" J�drzejewski <zyxwvu@users.sourceforge.net>
+	- Update Polish language
+
+18-04-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Remove Browser cache
+
+------- Release 0.9.5 ---------
+06-04-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Create a new theme and begin theme management
+
+------- Release 0.9.4 ---------
+11-03-2004 Paolo Saudin
+	- Add Italian language
+
+09-03-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- BugFixe : simple query with no comma result an error
+
+08-03-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- auto select sql in textarea when focus
+
+07-03-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- BugFixe : result display when PRAGMA sql command use
+
+------- Release 0.9.3 ---------
+28-02-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- BugFixe : when modify a query (mustn't reply it!!)
+	- BugFixe : primary field can be omitted in inserting record, so auto-increment work fine.
+
+28-02-2004 Rui Hirokawa <hirokawa at php dot net>
+	- Add Japanese language 
+
+27-02-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Remove all deprecated tags 'Font'
+	
+27-02-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Add german language submited by Carsten BL�M
+	- Enhancement of all translate
+
+26-02-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- some bug fixed, submitted by Carsten BL�M
+
+23-02-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Update function list
+
+23-02-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- BugFixe : 'View' properties when break line
+
+19-02-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- highlight query Ok, without break line
+
+13-02-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Allow user to create fields without type
+
+09-02-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Start query highlight display
+
+08-02-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Allow see 'Explain' command result
+	
+------- Release 0.9.2 ---------
+29-01-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Allow Mac os X user's to use it
+
+------- Release 0.9.1 ---------
+27-01-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- BugFixe : enhancement of special caractere into field name crash alter table
+
+22-01-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- BugFixe : special caractere into field name crash alter table
+	
+------- Release 0.9.0 ---------
+06-01-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- BugFixe : Problem when unset DEBUG mode
+	
+05-01-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- BugFixe : return to good page when delete or update record
+
+04-01-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Cleaning code and add cvs keyword
+	- BugFixe : Browse record navigation bar probleme fix
+
+03-01-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Number of record per page is configurable
+	
+02-01-2004 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Add link on top main page
+
+31-12-2003 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Enhancement of browse result display (modulo color, rollover,  select row)
+
+30-12-2003 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Add DEBUG option for enable/disable error display for sqlite function
+
+28-12-2003 frederic HENNINOT <fhenninot@freesurf.fr>
+	- some cleaning code
+	- Resolv export order problem
+	- enhancement of the delete/update record feature
+
+26-12-2003 frederic HENNINOT <fhenninot@freesurf.fr>
+	- remove short tag
+	- remove @filesource documentation tags
+	- remove PHP Notice Error for work with 'error_reporting = E_ALL'
+
+20-12-2003 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Enhancement of parsing select query string
+	- Big enhancement of delete/update record
+
+------- Release 0.8.5 ---------
+18-12-2003 frederic HENNINOT <fhenninot@freesurf.fr>
+	- New Feature : Ability to convert all mysql type dump into SQLite
+
+13-12-2003 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Cr�ation d'un icon Favori : favicon
+
+------- Release 0.8.4 ---------
+12-12-2003 frederic HENNINOT <fhenninot@freesurf.fr>
+	- New Feature : SQLite database options management (beginning)
+	- Bug Fixe : New database with file input on windows plateforme
+	
+11-12-2003 frederic HENNINOT <fhenninot@freesurf.fr>
+	- some navigation enhancement
+	- enhancement : ability to search new database path with file input form
+	
+10-12-2003 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Some BigFixes : save user defined function problem
+	- new feature : insert data from text formatted file
+
+09-12-2003 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Cleaning code of SQLiteToGrid class
+	- Feature enhancement : best support of in memory database
+
+08-12-2003 frederic HENNINOT <fhenninot@freesurf.fr>
+	- BugFixe : delete or update record condition when field is empty or content "'"
+	- BugFixe : Bad title when create view
+	
+------- Release 0.8.3 ---------
+07-12-2003 frederic HENNINOT <fhenninot@freesurf.fr>
+	- BugFixe : Index Form Display problem where add column
+
+06-12-2003 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Add Display information on Display value
+	- Enhancement feature with PHP5
+	- BugFixes : probleme when update record not null to null
+
+------- Release 0.8.2 ---------
+03-12-2003 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Bug [852637] Fix. Trigger Pb
+	- Record feature enhancement
+	- Bug [852048] Fix. Unnamed fields cause error
+
+02-12-2003 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Bug [852319] Fix. (replace 'type=button' by 'type=submit' and limit use of javascript
+	- Bug [852321] Fix. don't use javascript for frame navigation (left->right)
+
+01-12-2003 Tomasz "Zyx" J�drzejewski <zyxwvu@users.sourceforge.net>
+	- Add Polish language
+
+------- Release 0.8.1 ---------
+30-11-2003 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Bugfix : include bugfix for PHP 5
+
+29-11-2003 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Export structure and data to screen or file
+
+27-11-2003 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Detect language browser for choose good language
+	
+25-11-2003 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Add possibility to add a trigger
+	- Cleaning pics for Windows IE
+	
+24-11-2003 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Add function feature in insert or update feature
+	- Return to Display query when delete or update record
+
+23-11-2003 frederic HENNINOT <fhenninot@freesurf.fr>
+	- Add multilingual feature
+	- translate in english, also available in french and english
